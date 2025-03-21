@@ -1,0 +1,104 @@
+Level 0 DFD (Context Diagram)
+Description:
+
+The Level 0 DFD represents the Agile Track System as a single process interacting with external entities (User and Admin) and a database.
+Entities & Data Flow:
+●	User: Registers, logs in, views tasks, tracks progress, views team details.
+●	Admin: Logs in, manages scrum teams, tasks, and users, views user history.
+●	Agile Track System (Main Process): Handles all interactions.
+●	Database: Stores user credentials, scrum teams, tasks, and statuses.
+Diagram:
++---------------------------+          +--------------------------------+
+|   External Entity: User   | --------> |    Agile Track System         |
++---------------------------+          +--------------------------------+
+         | Registers, Logs In,                   |
+         | Views Tasks, Team Details            |
+         |                                      v
+         |                               +-----------------------+
+         |                               | Data Store: Database  |
+         |                               +-----------------------+
+         | Manages Teams, Tasks, Users          |
+         v                                      |
++---------------------------+          <--------+
+|   External Entity: Admin  |                   |
++---------------------------+                   |
+Data Flows:
+●	User -> System: Registration details, login credentials, task/team view requests.
+●	System -> User: Welcome page, task lists, team details, profile data.
+●	Admin -> System: Login credentials, team/task/user management requests.
+●	System -> Admin: Team details, task statuses, user profiles, history.
+●	System <-> Database: Stores/retrieves all data.
+______________
+Level 1 DFD (Detailed Diagram)
+
+Description:
+
+The Level 1 DFD breaks down the Agile Track System into sub-processes, detailing user and admin interactions with the system and database.
+Sub-Processes:
+1.	User Authentication: Signup and login for users.
+2.	User Task Management: Displays tasks and team details.
+3.	User Profile Viewing: Displays user-specific task profiles.
+4.	Admin Authentication: Login for admins.
+5.	Admin Team & Task Management: Manages scrum teams and tasks.
+6.	Admin User Management: Adds users and views task history.
+Diagram:
+
++-----------------------+                                       +-----------------------+
+
+| External Entity: User |                                       | External Entity: Admin|
+
++-----------------------+                                       +-----------------------+
+
+|                                                             |
+
+v                                                             v
+
++-----------------------+                               +-----------------------+
+
+| Process: 1.1 - Signup |                               | Process: 4.1 - Admin  |
+
+| Store in Database    |                               |        Login         |
+
++-----------------------+                               +-----------------------+
+
+|                                                             |
+
+v                                                             v
+
++-----------------------+                               +-----------------------+
+
+| Process: 1.2 - Login |                               | Process: 5.1 - Manage |
+
+| Validate User        |                               | Teams & Tasks        |
+
++-----------------------+                               +-----------------------+
+
+|                                                             |
+
+v                                                             v
+
++-----------------------+   +----------------+         +-----------------------+
+
+| Process: 2.1 - View   |   | Data Store:   | <------ | Process: 6.1 - Manage |
+
+| Tasks & Teams         |   | Database      | ------->| Users & History      |
+
++-----------------------+   +----------------+         +-----------------------+
+
+|
+
+v
+
++-----------------------+
+
+| Process: 3.1 - View   |
+
+| User Profile         |
+
++-----------------------+
+Data Flows:
+1.	Signup (1.1): User submits details -> Stored in Database.
+2.	Login (1.2): User submits credentials -> Validated -> Redirect to User Home.
+3.	View Tasks & Teams (2.1): User requests data -> Retrieved from Database -> Displayed.
+4.	View Profile (3.1): User requests profile -> Retrieved from Database -> Displayed.
+5.	Admin Login (4.1): Admin submits credentials -> Validated -> Redirect to Admin Home.

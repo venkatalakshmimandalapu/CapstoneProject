@@ -1,0 +1,88 @@
+
+.user-profile-container {
+    width: 50%;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  
+  .user-profile-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+ 
+  .user-profile-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-profile-container button:hover {
+    background-color: #0056b3;
+  }
+  
+ 
+  .user-form {
+    border: 1px solid #000;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .user-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .user-form input,
+  .user-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+ 
+  .user-list {
+    max-height: 300px;
+    overflow-y: auto; 
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  
+  .user-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .user-card p {
+    margin: 5px 0;
+  }
+  
+  .user-card button {
+    background-color: #28a745;
+  }
+  
+  .user-card button:hover {
+    background-color: #218838;
+  }
+  

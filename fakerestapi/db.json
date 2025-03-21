@@ -1,0 +1,125 @@
+{
+  "users": [
+    {
+      "id": "1742462644302",
+      "email": "mvl@gmail.com",
+      "password": "Mvl@12345",
+      "role": "user"
+    },
+    {
+      "id": "1742472948524",
+      "email": "admin@gmail.com",
+      "password": "Admin@123",
+      "role": "admin"
+    },
+    {
+      "id": "1742535077490",
+      "email": "manga@gmail.com",
+      "password": "Manga@123",
+      "role": "user"
+    },
+    {
+      "id": "eff4",
+      "name": "mouni",
+      "email": "mouni@gmail.com",
+      "password": "Mouni@123",
+      "role": "Employee"
+    },
+    {
+      "id": "27db",
+      "name": "jyo",
+      "email": "jyo@gmail.com",
+      "password": "Jyo@12345",
+      "role": "Employee"
+    },
+    {
+      "id": "1742537244245",
+      "email": "adminmowa@gmail.com",
+      "password": "Adminmowa@123",
+      "role": "admin"
+    },
+    {
+      "id": "b413",
+      "name": "pullaa",
+      "email": "pullaa@gmail.com",
+      "password": "Pulla@123",
+      "role": "Employee"
+    },
+    {
+      "id": "f5ef",
+      "name": "chintu",
+      "email": "chintu@gmail.com",
+      "password": "Chintu@123",
+      "role": "Employee"
+    },
+    {
+      "id": "ca7f",
+      "name": "ammu",
+      "email": "ammu@gmail.com",
+      "password": "Ammu@123",
+      "role": "Employee"
+    }
+  ],
+  "scrumTeams": [
+    {
+      "taskStatus": "To Do",
+      "id": "6e07"
+    },
+    {
+      "taskStatus": "In Progress",
+      "id": "1617"
+    },
+    {
+      "taskStatus": "In Progress",
+      "id": "4029"
+    },
+    {
+      "taskStatus": "Completed",
+      "id": "1742542676199"
+    },
+    {
+      "id": 1742552165518,
+      "name": "scrum 234",
+      "taskTitle": "add navigation",
+      "taskDescription": "navigation",
+      "taskStatus": "To Do",
+      "assignedTo": "b413"
+    },
+    {
+      "id": 1742556176976,
+      "name": "scrum team abc",
+      "taskTitle": "adding login page",
+      "taskDescription": "add login functionality",
+      "taskStatus": "To Do",
+      "assignedTo": "f5ef"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task1",
+      "title": "Implement Login Page",
+      "description": " By taking email and password as credentials , should allow users to access the actual page."
+    },
+    {
+      "id": "task2",
+      "title": "Fix Dashboard UI",
+      "description": " By taking email and password as credentials , should allow users to access the actual page."
+    }
+  ],
+  "history": [
+    {
+      "id": "h1",
+      "userId": "1742462644302",
+      "taskTitle": "Fix Login Page",
+      "taskDescription": "Ensure proper authentication flow.",
+      "taskStatus": "Completed"
+    },
+    {
+      "id": "h2",
+      "userId": "b413",
+      "taskTitle": "Update UI Components",
+      "taskDescription": "Enhance the user experience.",
+      "taskStatus": "In Progress"
+    }
+  ]
+}
