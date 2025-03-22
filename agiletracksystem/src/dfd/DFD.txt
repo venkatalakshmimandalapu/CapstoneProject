@@ -1,0 +1,95 @@
+Level 0 (Context Diagram):
+
++-------------------------+
+|  External Entities      |
+|   - User                |
+|   - Admin               |
++-------------------------+
+        |        |
+        v        v
++------------------------------+
+|      Agile Track System      |
+|  (Process: 1.0 - Main System)|
++------------------------------+
+        |        |
+        v        v
++---------------------+
+|  Data Stores        |
+|  - User Database    |
+|  - Task Database    |
+|  - Scrum DB         |
++---------------------+
+
+Explanation:
+
+    External Entities: Users (employees) and Admins interact with the system.
+
+    Process (1.0 - Agile Track System): Handles logins, task tracking, and user management.
+
+    Data Stores: Stores user profiles, tasks, and scrum team details.
+
+
+Level 1 DFD (Decomposed View):
+
++----------------------+      +---------------------+
+|   External Entity    |      |   External Entity   |
+|        (User)        |      |        (Admin)      |
++----------------------+      +---------------------+
+        |                               |
+        v                               v
++----------------------+      +----------------------+
+|  Process: 1.1        |      |  Process: 1.2        |
+|  User Authentication |      |  Admin Authentication|
++----------------------+      +----------------------+
+        |                               |
+        v                               v
++----------------------+      +----------------------+
+|  Data Store: User DB |      | Data Store: Admin DB |
++----------------------+      +----------------------+
+        |
+        v
++----------------------+
+|  Process: 1.3        |
+|  Task Management     |
++----------------------+
+        |
+        v
++----------------------+
+|  Data Store: Task DB |
++----------------------+
+        |
+        v
++---------------------+
+|  Process: 1.4       |
+|  Scrum Team Mgmt    |
++---------------------+
+        |
+        v
++----------------------+
+|  Data Store: Scrum DB|
++----------------------+
+
+
+Explanation:
+
+    Process 1.1 (User Authentication): Users log in using credentials stored in the User DB.
+
+    Process 1.2 (Admin Authentication): Admin logs in using credentials stored in the Admin DB.
+
+    Process 1.3 (Task Management): Users view/update their tasks; data is retrieved from the Task DB.
+
+    Process 1.4 (Scrum Team Management): Admin manages teams and assigns tasks using Scrum DB.
+
+Data Flow:
+
+    Users send login credentials -> System validates against User DB.
+
+    Admins authenticate -> System validates against Admin DB.
+
+After login:
+
+    Users can view assigned tasks from Task DB.
+
+    Admins can assign/update tasks in Scrum DB.
+
+    Admins can view user profiles stored in User DB.
